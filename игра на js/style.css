@@ -1,0 +1,59 @@
+
+.bord {
+    width: 800px;
+    height: 350px;
+    border: 2px solid #000;
+}
+
+.game {
+    width: 800px;
+    height: 350px;
+    border-bottom: 2px solid #000;
+}
+
+#ninja {
+    width: 100px;
+    height: 70px;
+    background-image: url(img/character-game-png-3.png);
+    background-size: 100px 70px;
+    position: relative;
+    top: 290px;
+}
+#tree {
+    width: 50px;
+    height: 40px;
+    background-image: url(img/1669966538_1-pibig-info-p-sprait-dereva-krasivo-1.png);
+    background-size: 50px 40px;
+    position: relative;
+    top: 240px;
+    left: 400px;
+    animation: treeMov 1.5s infinite linear;
+}
+@keyframes treeMov {
+    0% {
+        left: 400px;
+    }
+  100% {
+  left: -400px;  
+  }
+}
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
